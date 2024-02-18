@@ -6,24 +6,24 @@ const port = 8000
 // after install body parser then define or use
 app.use(bodyparser.json());
 
-// object data
-const data = [
-	{
-		"name": "Rokibul Hasan",
-		"city": "Jamalpur",
-		"occupation": "Engineer"
-	},
-	{
-		"name": "Hridoy Hasan",
-		"city": "Tangail",
-		"occupation": "Doctor"
-	},
-	{
-		"name": "Humairah",
-		"city": "Shylet",
-		"occupation": "Student"
-	}
-]
+// example json data for testing purposes on postman
+// [
+// 	{
+// 		"name": "Rokibul Hasan",
+// 		"city": "Jamalpur",
+// 		"occupation": "Engineer"
+// 	},
+// 	{
+// 		"name": "Hridoy Hasan",
+// 		"city": "Tangail",
+// 		"occupation": "Doctor"
+// 	},
+// 	{
+// 		"name": "Humairah",
+// 		"city": "Shylet",
+// 		"occupation": "Student"
+// 	}
+// ]
 
 // send post json response
 app.post('/', (req, res) => {
