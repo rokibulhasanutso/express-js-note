@@ -5,6 +5,8 @@ const port = 8000
 // send redirect response
 app.get('/', (req, res) => {
 	res.redirect('/new-file')
+	// when you goto root path then instant redirect to /new-file
+	// so you can show new-file
 })
 
 app.get('/new-file', (req, res) => {
